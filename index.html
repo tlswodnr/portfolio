@@ -58,7 +58,7 @@
     </section>
 
     <!-- About -->
-    <section id="about" class="section">
+    <section id="about" class="section section__container">
       <h1>About Me</h1>
       <p>
         나를 소개하는 문장 3줄 정도(프론트엔드 공부 몇 년, 백엔드에도 관심 있고
@@ -104,7 +104,7 @@
             class="job__logo"
           />
           <div class="job__description">
-            <p class="job__name">~에서~하는 일을 했다</p>
+            <p class="job__name">~에서~하는 일을 했다 ~에서~하는 일을 했다</p>
             <div class="job__period">기간(2021년 3월 ~ until now)</div>
           </div>
         </div>
@@ -115,7 +115,7 @@
             class="job__logo"
           />
           <div class="job__description">
-            <p class="job__name">~에서~하는 일을 했다</p>
+            <p class="job__name">~에서~하는 일을 했다 ~에서~하는 일을 했다</p>
             <div class="job__period">기간(2021년 3월 ~ until now)</div>
           </div>
         </div>
@@ -124,72 +124,91 @@
 
     <!-- Skills -->
     <section id="skills" class="section">
-      <h1>Skills</h1>
-      <h2>Skills & Attributes</h2>
-      <p>
-        ~경험이 있다, 팀으로 일할 수도 있고 혼자서도 일할 수도 있다 그리고
-        시간도 잘 지키고---
-      </p>
-      <div class="skillset">
-        <div class="skillset__left">
-          <h3 class="skillset__title">Skills</h3>
-          <div class="skill">
-            <div class="skill__description">
-              <span>HTML</span>
-              <span>70%</span>
-              <div class="skill__bar"></div>
-              <div class="skill__value"></div>
+      <div class="section__container">
+        <h1>Skills</h1>
+        <h2>Skills & Attributes</h2>
+        <p>
+          ~경험이 있다, 팀으로 일할 수도 있고 혼자서도 일할 수도 있다 그리고
+          시간도 잘 지키고---
+        </p>
+        <div class="skillset">
+          <div class="skillset__left">
+            <h3 class="skillset__title">Skills</h3>
+            <div class="skill">
+              <div class="skill__description">
+                <span>HTML</span>
+                <span>70%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 70%"></div>
+              </div>
             </div>
-            <div class="skill__description">
-              <span>CSS</span>
-              <span>70%</span>
-              <div class="skill__bar"></div>
-              <div class="skill__value"></div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>CSS</span>
+                <span>55%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 55%"></div>
+              </div>
             </div>
-            <div class="skill__description">
-              <span>JAVASCRIPT</span>
-              <span>50%</span>
-              <div class="skill__bar"></div>
-              <div class="skill__value"></div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>JAVASCRIPT</span>
+                <span>40%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 40%"></div>
+              </div>
             </div>
-            <div class="skill__description">
-              <span>TYPESCRIPT</span>
-              <span>10%</span>
-              <div class="skill__bar"></div>
-              <div class="skill__value"></div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>TYPESCRIPT</span>
+                <span>10%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 10%"></div>
+              </div>
             </div>
-            <div class="skill__description">
-              <span>REACT</span>
-              <span>10%</span>
-              <div class="skill__bar"></div>
-              <div class="skill__value"></div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>REACT</span>
+                <span>10%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 10%"></div>
+              </div>
             </div>
-            <div class="skill__description">
-              <span>NODEjs</span>
-              <span>10%</span>
-              <div class="skill__bar"></div>
-              <div class="skill__value"></div>
+            <div class="skill">
+              <div class="skill__description">
+                <span>NODEjs</span>
+                <span>10%</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 10%"></div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="skillset__right">
-          <div class="tools">
-            <h3 class="skillset__title">Tools</h3>
-            <ul class="tools__list">
-              <li><span>Visual Studio Code</span></li>
-              <li><span>IntelliJ</span></li>
-              <li><span>Android Studio Code</span></li>
-              <li><span>IOS development tools</span></li>
-              <li><span>Sketch app</span></li>
-            </ul>
-          </div>
-          <div class="etc">
-            <h3 class="skillset__title">Etc</h3>
-            <ul class="etc__list">
-              <li><span>Git</span></li>
-              <li><span>Scrum</span></li>
-              <li><span>Math</span></li>
-            </ul>
+
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="tools__list">
+                <li><span>Visual Studio Code</span></li>
+                <li><span>IntelliJ</span></li>
+                <li><span>Android Studio Code</span></li>
+                <li><span>IOS development tools</span></li>
+                <li><span>Sketch app</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Etc</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Scrum</span></li>
+                <li><span>Math</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
