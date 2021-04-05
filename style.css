@@ -131,6 +131,15 @@ p {
   background-color: var(--color-background-hover);
 }
 
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+}
+
 /* Home */
 
 #home {
@@ -458,4 +467,48 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-yellow);
+}
+
+/* For below(이하) 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    width: 100%;
+    display: none;
+  }
+
+  .navbar__list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about__majors {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .skillset {
+    flex-direction: column;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
+
+  .testimonial__avatar {
+    width: 80px;
+    height: 80px;
+  }
 }
