@@ -102,8 +102,13 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--color-dark-blue);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
   padding: 16px;
+  transition: background-color var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 .navbar__list {
@@ -146,6 +151,7 @@ p {
   background: url(imgs/home-background.png) center/cover no-repeat;
   padding: 40px;
   text-align: center;
+  padding-top: 120px;
 }
 
 .home__avatar {
