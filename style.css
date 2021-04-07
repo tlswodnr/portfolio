@@ -105,7 +105,7 @@ p {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
+  background-color: var(--color-dark-blue);
   padding: 16px;
   transition: background-color var(--animation-duration) ease-in-out;
   z-index: 1;
