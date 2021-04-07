@@ -4,7 +4,7 @@
 const navbar = document.querySelector("#navbar");
 document.addEventListener("scroll", (event) => {
   const y = window.pageYOffset;
-  if (y === 0) {
+  if (y <= 100) {
     navbar.style.backgroundColor = "transparent";
   } else {
     navbar.style.backgroundColor = "var(--color-dark-blue)";
@@ -60,4 +60,18 @@ const homeHeight = home.getBoundingClientRect().height;
 const homeContainer = document.querySelector(".home__container");
 document.addEventListener("scroll", () => {
   homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+//arrow button - home으로
+const arrowBtn = document.querySelector(".arrow-btn");
+document.addEventListener("scroll", () => {
+  if (window.scrollY <= 712) {
+    arrowBtn.style.display = "none";
+  } else {
+    arrowBtn.style.display = "block";
+  }
+});
+
+arrowBtn.addEventListener("click", () => {
+  home.scrollIntoView({ behavior: "smooth" });
 });

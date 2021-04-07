@@ -190,6 +190,22 @@ p {
   margin: auto;
 }
 
+.arrow-btn {
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
+  border-radius: 50%;
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-white);
+  background-color: var(--color-blue);
+  cursor: pointer;
+}
+
 /* About */
 
 .about__majors {
