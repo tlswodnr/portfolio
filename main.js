@@ -54,3 +54,10 @@ contactBtn.addEventListener("click", () => {
 homeContactBtn.addEventListener("click", () => {
   contact.scrollIntoView({ behavior: "smooth" });
 });
+
+// home 점점 흐려짐
+const homeHeight = home.getBoundingClientRect().height;
+const homeContainer = document.querySelector(".home__container");
+document.addEventListener("scroll", () => {
+  homeContainer.style.opacity = 1 - window.scrollY / homeHeight;
+});
